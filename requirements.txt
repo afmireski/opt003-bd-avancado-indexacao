@@ -1,11 +1,14 @@
 # Conexão com PostgreSQL
-psycopg2-binary==2.9.10
+psycopg2-binary>=2.9.5
 
 # Manipulação de dados
-pandas==2.2.3
+pandas>=1.3.5
 numpy==2.2.5
 
 # Visualização de dados
-matplotlib==3.10.1
+matplotlib>=3.5.2
 seaborn==0.13.2
 plotly==6.0.1
+
+Faker>=13.0.0
+configparser>=5.2.0
