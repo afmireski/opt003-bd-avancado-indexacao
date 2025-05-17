@@ -1,0 +1,19 @@
+version: '3'
+
+services:  
+  postgres-db:
+    image: postgres:17.4
+    container_name: opt003_db
+    restart: always
+    tty: true
+    volumes:
+      - ./.docker/postgres/dbdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+volumes:
+  .docker:
+
