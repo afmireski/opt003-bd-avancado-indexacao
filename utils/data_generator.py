@@ -245,7 +245,7 @@ class BibliotecaDataGenerator:
             rows_affected = execute_many(sql, params)
             total_inseridos += rows_affected
 
-            print(f"Inseridos {total_inseridos} usuários de {quantidade}...")
+            # print(f"Inseridos {total_inseridos} usuários de {quantidade}...")
 
         return total_inseridos
 
@@ -292,7 +292,7 @@ class BibliotecaDataGenerator:
             rows_affected = execute_many(sql, params)
             total_inseridos += rows_affected
 
-            print(f"Inseridos {total_inseridos} livros de {quantidade}...")
+            # print(f"Inseridos {total_inseridos} livros de {quantidade}...")
 
         return total_inseridos
 
@@ -347,7 +347,7 @@ class BibliotecaDataGenerator:
             rows_affected = execute_many(sql, batch_params)
             total_inseridos += rows_affected
 
-            print(f"Inseridos {total_inseridos} empréstimos de {quantidade}...")
+            # print(f"Inseridos {total_inseridos} empréstimos de {quantidade}...")
 
         return total_inseridos
 
